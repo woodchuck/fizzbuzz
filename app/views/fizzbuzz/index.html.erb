@@ -1,9 +1,13 @@
-<h1>Fizzbuzz#index</h1>
+<h1>Fizzbuzzness</h1>
 
 <div id="output">
 </div>
 
 <script>
+  $.ajaxSetup({
+    async: false
+  });
+
   for ($i = 1; $i <= 100; $i++) {
     $.get( `/fizzbuzz/${$i}`, function( data ) {
       $('#output').append(`${$i}: ` + data.value + "<br>\n");
