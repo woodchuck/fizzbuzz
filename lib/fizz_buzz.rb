@@ -1,4 +1,4 @@
-class FizzBuzz < ApplicationRecord
+class FizzBuzz
   def self.fizzbuzzness(n)
     result = ''
     if n % 3 == 0

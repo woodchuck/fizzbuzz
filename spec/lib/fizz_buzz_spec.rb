@@ -1,4 +1,4 @@
-require 'rails_helper'
+require 'fizz_buzz'
 
 RSpec.describe FizzBuzz, type: :model do
   # TODO: use contexts?

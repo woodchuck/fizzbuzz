@@ -1,3 +1,5 @@
+require 'fizz_buzz'
+
 class FizzbuzzController < ApplicationController
   def index
   end
