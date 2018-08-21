@@ -3,11 +3,9 @@
 <div id="output">
 </div>
 
-
 <script>
   for ($i = 1; $i <= 100; $i++) {
     $.get( `/fizzbuzz/${$i}`, function( data ) {
-      // var obj = jQuery.parseJSON(data);
       $('#output').append(`${$i}: ` + data.value + "<br>\n");
     });
   }
